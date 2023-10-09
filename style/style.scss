@@ -1,0 +1,26 @@
+$color-primary: #572364;
+$color-secondary: #fff;
+$bg-body: #F4EDE4;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+}
+
+body.container-all {
+    width: 100%;
+    background-color: $color-secondary;
+}
+
+@import 'nav';
+@import 'header';
+@import 'partners';
+@import 'sections-video-info';
+@import 'feedback';
+@import 'feedback-2';
+@import 'cards.scss';
+@import 'discover';
+@import 'footer';

@@ -1,0 +1,159 @@
+nav.container-nav-bar-logo {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    padding: 0px 15px;
+
+    background-color: $color-primary;
+
+    > a:first-child {
+        width: 100px;
+        height: 50px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+
+            filter: invert(1);
+        }
+    }
+
+    div.container__nav-bar {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            list-style: none;
+
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            align-items: center;
+
+            padding-left: 20px;
+
+            li a {
+                color: #ffffff;
+                cursor: pointer;
+
+                &:first-child > img,
+                &:nth-child(2) > img,
+                &:nth-child(4) > img {
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 5px;
+
+                    filter: invert(1);
+                }
+            }
+
+            li:nth-child(3) a:hover,
+            li:last-child a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        div.container__sign-up {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+
+            a:first-child {
+                color: $color-secondary;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            a:nth-child(2) {
+                border: 1px solid $color-secondary;
+                padding: 15px;
+                border-radius: 10px;
+                color: $color-secondary;
+
+                &:hover {
+                    box-shadow: inset 0 0 0 2px $color-secondary;
+                    transition: all ease 500ms;
+                }
+            }
+
+            a:last-child {
+                border: 1px;
+                padding: 15px;
+                border-radius: 10px;
+                background-color: $color-secondary;
+
+                &:hover {
+                    box-shadow: inset 0 0 0 2px $color-primary;
+                    transition: all ease 500ms;
+                }
+            }
+        }
+
+        display: none;
+
+    }
+
+    > button:last-child {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        filter: invert(1);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    nav.container-nav-bar-logo {
+        
+        div.container__nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            div.container__sign-up {
+
+                a:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+
+        > button:last-child {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav.container-nav-bar-logo {
+
+        div.container__nav-bar {
+
+            div.container__sign-up {
+
+                > a:nth-child(2) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
