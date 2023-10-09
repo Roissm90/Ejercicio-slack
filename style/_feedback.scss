@@ -9,6 +9,8 @@ section.container-feedback {
     justify-content: center;
     align-items: center;
 
+    position: relative;
+
     h3 {
         font-weight: 700;
         line-height: 1.1875;
@@ -117,6 +119,44 @@ section.container-feedback {
             }
         }
     }
+
+    > img {
+        width: 100px;
+        height: 60px;
+
+        position:absolute;
+        display: none;
+
+        &:nth-child(5) {
+            top: 60px;
+            left: 20%;
+        }
+
+        &:nth-child(6) {
+            top: 70px;
+            right: 22%;
+        }
+
+        &:nth-child(7) {
+            top: 120px;
+            left: 16%;
+        }
+
+        &:nth-child(8) {
+            top: 120px;
+            right: 30%;
+        }
+
+        &:nth-child(9) {
+            top: 170px;
+            left: 23%;
+        }
+
+        &:last-child {
+            top: 160px;
+            right: 22%;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -150,6 +190,15 @@ section.container-feedback {
                 width: 30%;
                 padding: 0 0;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.container-feedback {
+
+        > img {
+            display: block;
         }
     }
 }

@@ -568,6 +568,7 @@ section.container-feedback {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 section.container-feedback h3 {
   font-weight: 700;
@@ -656,6 +657,36 @@ section.container-feedback ul li p:last-child {
   letter-spacing: normal;
   font-size: 0.875rem;
 }
+section.container-feedback > img {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  display: none;
+}
+section.container-feedback > img:nth-child(5) {
+  top: 60px;
+  left: 20%;
+}
+section.container-feedback > img:nth-child(6) {
+  top: 70px;
+  right: 22%;
+}
+section.container-feedback > img:nth-child(7) {
+  top: 120px;
+  left: 16%;
+}
+section.container-feedback > img:nth-child(8) {
+  top: 120px;
+  right: 30%;
+}
+section.container-feedback > img:nth-child(9) {
+  top: 170px;
+  left: 23%;
+}
+section.container-feedback > img:last-child {
+  top: 160px;
+  right: 22%;
+}
 
 @media screen and (min-width: 768px) {
   section.container-feedback div.container-a-button {
@@ -680,6 +711,11 @@ section.container-feedback ul li p:last-child {
   section.container-feedback ul li {
     width: 30%;
     padding: 0 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.container-feedback > img {
+    display: block;
   }
 }
 section.container-feedback-2 {
