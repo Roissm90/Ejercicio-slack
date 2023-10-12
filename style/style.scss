@@ -7,13 +7,15 @@ $bg-body: #F4EDE4;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: Slack-Circular-Pro,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    font-family: 'Slack', sans-serif;
 }
 
 body.container-all {
     width: 100%;
     background-color: $color-secondary;
 }
+
+@import url('https://fonts.cdnfonts.com/css/slack');
 
 @import 'nav';
 @import 'header';
